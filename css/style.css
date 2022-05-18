@@ -134,7 +134,7 @@ select {
 }
 
 html {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 body {
@@ -144,19 +144,6 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow: hidden;
-}
-
-body main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
 }
 
 .attribution {
@@ -214,6 +201,65 @@ body main {
 .show {
   visibility: visible;
   opacity: 100%;
+}
+
+.download-btn {
+  min-height: 61px;
+  width: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  white-space: nowrap;
+  padding: 0 28px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: -0.18px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.download-btn::before {
+  content: "";
+  width: 17.08px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 8px;
+}
+
+.download-btn_ios {
+  color: #fcfaf9;
+  background-color: #191826;
+}
+
+.download-btn_ios::before {
+  background-image: url("../assets/icon-apple.svg");
+}
+
+.download-btn_ios:hover {
+  background-color: #66e2dc;
+}
+
+.download-btn_android {
+  color: #191826;
+  background-color: #fcfaf9;
+}
+
+.download-btn_android::before {
+  background-image: url("../assets/icon-android.svg");
+}
+
+.download-btn_android:hover {
+  background-color: #ffb964;
 }
 
 .show {

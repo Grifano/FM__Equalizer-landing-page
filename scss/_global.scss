@@ -1,5 +1,5 @@
 html {
-  font-size: 15px;
+  font-size: 16px;
 }
 body {
   background-color: $white;
@@ -7,12 +7,6 @@ body {
   height: 100vh;
   box-sizing: border-box;
   overflow: hidden;
-  main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
 }
 
 // Attribution to author and Frontend Mentor platform
@@ -63,4 +57,48 @@ body {
 .show {
   visibility: visible;
   opacity: 100%;
+}
+.download-btn {
+  min-height: 61px;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  padding: 0 28px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: -0.18px;
+  transition: all 0.3s ease 0s;
+  &::before {
+    content: "";
+    width: 17.08px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 8px;
+  }
+  &_ios {
+    color: $white;
+    background-color: $dark;
+    &::before {
+      background-image: url("../assets/icon-apple.svg");
+    }
+    &:hover {
+      background-color: $brand;
+    }
+  }
+  &_android {
+    color: $dark;
+    background-color: $white;
+    &::before {
+      background-image: url("../assets/icon-android.svg");
+    }
+    &:hover {
+      background-color: $yellow;
+    }
+  }
 }
