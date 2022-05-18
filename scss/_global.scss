@@ -6,7 +6,6 @@ body {
   font-family: $fontFamily;
   height: 100vh;
   box-sizing: border-box;
-  overflow: hidden;
 }
 
 // Attribution to author and Frontend Mentor platform
@@ -14,7 +13,7 @@ body {
   color: $attr_tc;
   font-size: 11px;
   text-align: center;
-  position: absolute;
+  position: relative;
   width: 100%;
   height: auto;
   bottom: 0;
@@ -47,9 +46,14 @@ body {
 
 // Container
 .container {
-  padding: 32px;
+  padding: 33px;
+  max-width: 1134px;
+  margin: auto;
+  @media (max-width: 768px) {
+    max-width: 696px;
+  }
   @media (max-width: 375px) {
-    padding: 24px;
+    padding: 36px;
   }
 }
 
@@ -59,13 +63,12 @@ body {
   opacity: 100%;
 }
 .download-btn {
-  min-height: 61px;
   width: 100%;
+  min-height: 61px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   white-space: nowrap;
-  padding: 0 28px;
   border-radius: 12px;
   text-decoration: none;
   font-weight: 700;
@@ -100,5 +103,42 @@ body {
     &:hover {
       background-color: $yellow;
     }
+  }
+}
+
+// Logo
+.brand {
+  display: inline-block;
+  width: 146.09px;
+  height: 32px;
+  font-size: 0;
+}
+
+// Footer
+.social {
+  display: flex;
+  list-style: none;
+  font-size: 0;
+  margin-left: -10px;
+  margin-right: -10px;
+  li {
+    margin: 0 10px;
+  }
+  &__link {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__link--fb {
+    background-image: url("../assets/icon-facebook.svg");
+  }
+  &__link--in {
+    background-image: url("../assets/icon-instagram.svg");
+  }
+  &__link--tw {
+    background-image: url("../assets/icon-twitter.svg");
   }
 }
