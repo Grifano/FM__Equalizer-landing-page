@@ -33,29 +33,46 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution]()
-- Live Site URL: [Live](???)
+- Live Site URL: [Live](https://grifano.github.io/Equalizer-landing-page/)
 
 ## My process
 
 ### Built with
 
-<!-- - Semantic HTML5 markup
+Semantic HTML5 markup
+
 - CSS custom properties
 - SASS/SCSS
-- JavaScript
-- Flexbox
-- Responsive Web Design -->
+- Position
+- Responsive Web Design
 
 ### What I learned
 
-???
+how to change background-color for SVG icon through CSS, using fill property.
 
 ```css
-???
+...
+  svg path {
+    transition: all 0.3s ease 0s;
+  }
+  &:hover {
+    svg path {
+      fill: $coral !important;
+    }
+  }
+...
 ```
 
-```js
-???
+how to apply a couple of background images to one element, and to set a value for each image.
+
+```css
+...
+  background-image: url("../assets/bg-pattern-1.svg"),
+    url("../assets/bg-main-desktop.png");
+  background-repeat: no-repeat no-repeat;
+  background-size: 28vmin, auto;
+  background-position: top right, 70% 20%;
+...
 ```
 
 ### Continued development
@@ -65,6 +82,9 @@ I hope that such amzing tools like [Frontend Mentor](https://www.frontendmentor.
 
 ### Useful resources
 
+[StackOverflow](https://stackoverflow.com/questions/39743161/svg-fill-color-not-working) - How to change color for SVG element through CSS.
+[MDM Web Doc](https://developer.mozilla.org/en-US/docs/Web/CSS/background-position-y) - This is halp me with positioning background elements.  
+[PX to VW](https://web-development.space/tools/px-to-vw/) - A helpful tool for converting px to vw depending on viewport.
 [Frontend Mentor](https://www.frontendmentor.io/) - Get a challenge and try to make them as close to a mockup as you can.  
 [Uxcel](https://uxcel.com?invite=EE4PBID94EEH) - improv UX/UI Design skills, by reading the article and check your new knowledge by passing a quiz.
 

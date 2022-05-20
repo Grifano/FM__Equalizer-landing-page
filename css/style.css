@@ -325,8 +325,6 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
 }
 
 .social__link svg path {
