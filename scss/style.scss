@@ -48,28 +48,47 @@
 // Header
 header {
   padding-top: 62px;
+  margin-bottom: 127.01px;
+  @media (max-width: 768px) {
+    margin-bottom: 95.01px;
+  }
 }
 
 // Main
-.container {
-}
 .title {
   font-size: 88px;
   font-weight: 700;
   line-height: 1;
   letter-spacing: -1px;
   margin-bottom: 40px;
+  max-width: 60vmax;
+  @media (max-width: 768px) {
+    font-size: 64px;
+    letter-spacing: -0.7272727489471436px;
+    margin-bottom: 28px;
+    max-width: 426px;
+  }
 }
 .sub-title {
   font-size: 20px;
   line-height: 34px;
+  max-width: 825px;
+  @media (max-width: 768px) {
+    font-size: 18px;
+    line-height: 28px;
+    max-width: 514px;
+  }
 }
 .card {
   background-color: $coral;
   border-radius: 12px;
   padding: 58px 54px 48px;
-  max-width: 330px;
+  max-width: 446px - 54 - 54;
   color: $white;
+  @media (max-width: 768px) {
+    padding: 48px;
+    max-width: 399px - 48 - 48;
+  }
   &__title {
     font-size: 40px;
     font-weight: 700;
@@ -108,6 +127,39 @@ header {
     }
   }
 }
+.content-block {
+  margin-top: 321px;
+  margin-bottom: 202px;
+  background-color: $dark;
+  background-image: url("../assets/bg-pattern-2.svg");
+  background-repeat: no-repeat;
+  background-size: 312px;
+  background-position: top -40px left 336px;
+  position: relative;
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 600px;
+  &__card {
+    position: absolute;
+    bottom: -115px;
+    right: 95px;
+  }
+
+  &__img {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: -213px;
+    left: 102px;
+    @media (max-width: 768px) {
+      max-width: 271.21px;
+    }
+    @media (max-width: 375px) {
+      max-width: 208.97px;
+    }
+  }
+}
 
 // Footer
 .footer {
@@ -127,7 +179,7 @@ header {
     &:nth-child(2) {
       flex-grow: 1;
       margin-right: 100px;
-      @media (max-width: 631px) {
+      @media (max-width: 664px) {
         margin-bottom: 64px;
       }
     }
