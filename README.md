@@ -97,6 +97,7 @@ I hope that such amzing tools like [Frontend Mentor](https://www.frontendmentor.
 
 ### Useful resources
 
+[Deque University](https://dequeuniversity.com/rules/axe/4.3/region?application=axeAPI) - All page content must be contained by landmarks
 [StackOverflow](https://stackoverflow.com/questions/39743161/svg-fill-color-not-working) - How to change color for SVG element through CSS.
 [MDM Web Doc](https://developer.mozilla.org/en-US/docs/Web/CSS/background-position-y) - This is halp me with positioning background elements.  
 [PX to VW](https://web-development.space/tools/px-to-vw/) - A helpful tool for converting px to vw depending on viewport.
