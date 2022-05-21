@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution](https://www.frontendmentor.io/solutions/responsive-landing-page-html-and-css-gVTMm62QR3)
-- Live Site URL: [Live](https://grifano.github.io/Equalizer-landing-page/)
+- Live Site URL: [Live](https://grifano.github.io/FM__Equalizer-landing-page/)
 
 ## My process
 
