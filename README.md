@@ -52,7 +52,7 @@ When I tryed to find a solution to fix this warning about "All page content shou
 
 ```html
 ...
-<div role="attribution" class="attribution">
+<div role="contentinfo" class="attribution">
   <p class="attribution__text">
     Challenge by
     <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
