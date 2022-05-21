@@ -48,7 +48,7 @@ Semantic HTML5 markup
 
 ### What I learned
 
-When I tryed to find a solution to fix this warning about "All page content should be contained by landmarks". I read the article about ARIA role types.
+When I tried to find a solution to fix this warning about "All page content should be contained by landmarks". I read the article about ARIA role types. But, unfortunately, it does not fix the warning.
 
 ```html
 ...
