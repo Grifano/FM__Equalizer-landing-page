@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution]()
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/responsive-landing-page-html-and-css-gVTMm62QR3)
 - Live Site URL: [Live](https://grifano.github.io/Equalizer-landing-page/)
 
 ## My process
@@ -47,6 +47,21 @@ Semantic HTML5 markup
 - Responsive Web Design
 
 ### What I learned
+
+When I tryed to find a solution to fix this warning about "All page content should be contained by landmarks". I read the article about ARIA role types.
+
+```html
+...
+<div role="attribution" class="attribution">
+  <p class="attribution__text">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      >Frontend Mentor</a
+    >
+  </p>
+  ...
+</div>
+```
 
 how to change background-color for SVG icon through CSS, using fill property.
 
